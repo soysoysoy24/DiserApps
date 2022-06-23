@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Select Customer"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/customerField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:drawableLeft="@drawable/customer"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Select Customer"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/docTxtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Report Category"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/reportFieldTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:drawableLeft="@drawable/invoicenum"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Select Report Category"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+       android:fontFamily="@font/poppins_regular" />
+
+
+    <RelativeLayout
+        android:id="@+id/textHeaderTitleMainRprt"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/report"
+            android:drawablePadding="10dp"
+            android:text="Report"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_regular" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/textHeaderMainRprt"
+        android:background="#9C9C9C"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <EditText
+            android:id="@+id/rprtEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/edittxtdesign"
+            android:ems="10"
+            android:gravity="top"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textColorHint="#5C000000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15dp"
+            android:theme="@style/AppThemeFontStyle" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/cameraBtn"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+
+            android:background="@drawable/effect_submit"
+            android:clickable="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:theme="@style/AppThemeFontStyle">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/camera" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/sbmtRprtBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/effect_submit"
+            android:clickable="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fff"
+            android:theme="@style/AppThemeFontStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Submit"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/imgReportHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/cnclImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/effect_click"
+            android:clickable="true"
+            android:src="@drawable/cancel"
+            android:translationZ="100dp" />
+
+        <RelativeLayout
+            android:id="@+id/imgreportViewer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-8dp"
+            android:background="@drawable/effect_click"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/reportImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"/>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

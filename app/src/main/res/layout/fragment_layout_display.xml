@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="DISPLAY"
+            android:textColor="#534F4F"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageViewNoData"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/nodatafoundv2"/>
+
+        <ListView
+            android:id="@+id/displayView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none">
+
+        </ListView>
+
+
+      <!--  <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/AddItemBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:visibility="visible"
+            app:srcCompat="@drawable/addnew"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/teal_200"
+            />-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

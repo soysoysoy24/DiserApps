@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <LinearLayout
+        android:id="@+id/mainItmLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="13dp"
+        android:background="@drawable/strokematerials">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/itemMatTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:paddingLeft="5dp"
+                    android:text="Item: Cheese Cake"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppins_regular" />
+
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/QtyStatsImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lining"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/lineshipment"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/tmeInBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/addmoreColor"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="QTY"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/addmoreColor"
+                    android:gravity="center">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="EXP. DATE"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+        <!--    <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="3dp"
+                            android:gravity="center"
+                            android:background="@color/addmoreColor">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="QUANTITY"
+                                android:textAlignment="center"
+                                android:textColor="#FFF"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/MatQtyDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="12"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:textSize="15dp"
+                            android:fontFamily="@font/poppins_regular"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="3dp"
+                            android:gravity="center"
+                            android:background="@color/addmoreColor">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:fontFamily="@font/poppins_regular"
+                                android:text="EXP. DATE"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:textColor="#FFF"
+                                android:textSize="12dp" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/MatExpDateTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#000"
+                            android:text="12"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/poppins_regular"/>
+
+                    </LinearLayout>
+
+                </TableRow>
+            </TableLayout>-->
+
+<!--            <ListView
+                android:id="@+id/ItemListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none">
+
+            </ListView>-->
+
+
+            <LinearLayout
+                android:id="@+id/layout_itemDets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_title"
+                android:layout_marginTop="-5dp"
+                android:orientation="vertical" >
+
+<!--
+                <include layout="@layout/layout_itemdata_v2" />
+                <include layout="@layout/layout_itemdata_v2" />
+                <include layout="@layout/layout_itemdata_v2" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rmrksHeader"
+            android:clickable="true"
+            android:background="?attr/colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="1dp">
+
+
+
+            <EditText
+                android:id="@+id/rmrksTxtField"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Add remarks"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp"
+                android:textColorHint="#5C000000"
+                android:theme="@style/AppThemeFontStyle"
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@drawable/edittxtdesign" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

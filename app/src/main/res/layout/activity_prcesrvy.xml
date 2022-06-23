@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/prceSrveyHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/circlelogo"
+            android:translationZ="1dp">
+
+            <ImageView
+                android:id="@+id/prceSrvyImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/price_survey" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:background="@color/statsBar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="Price Survey"
+                android:textColor="#FFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/prceSrveyHeader"
+        android:id="@+id/headeraccnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <include layout="@layout/layout_controlprcesrvey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lineInv"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/headeraccnt"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#4FC3F7" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sbmtRprtBtn"
+        android:layout_below="@+id/lineInv">
+
+
+        <LinearLayout
+            android:id="@+id/header_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/tmeInBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/addmoreColor"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="PRODUCT CODE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/addmoreColor"
+                android:gravity="center">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="PRICE"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12dp" />
+
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+     <ImageView
+       android:id="@+id/imageViewNoData"
+       android:layout_centerInParent="true"
+       android:layout_marginTop="20dp"
+       android:visibility="visible"
+       android:layout_width="150dp"
+       android:layout_height="150dp"
+       android:background="@drawable/nodatafoundv2"/>
+
+
+        <ListView
+            android:id="@+id/PrceSrvyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header_title"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+
+
+   <!-- <include layout="@layout/layout_prcesrveydata" />-->
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sbmtRprtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/effect_submit"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:theme="@style/AppThemeFontStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Submit"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+ <!--   <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddItemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"
+        app:tint="@android:color/white"
+        app:srcCompat="@drawable/addnew" />
+-->
+
+</RelativeLayout>

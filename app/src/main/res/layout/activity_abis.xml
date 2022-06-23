@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/abisHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/circlelogo"
+            android:translationZ="1dp">
+
+            <ImageView
+                android:id="@+id/prceSrvyImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/abis" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:background="@color/statsBar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="ABIS"
+                android:textColor="#FFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/abisHeader"
+        android:id="@+id/controlAbis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <include layout="@layout/layout_controlabis" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lineInv"
+        android:layout_below="@+id/controlAbis"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#4FC3F7" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sbmtRprtBtn"
+        android:layout_below="@+id/lineInv">
+
+       <!-- <include layout="@layout/layout_abisdata" />-->
+
+
+      <!--  <ImageView
+            android:id="@+id/imageViewNoData"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/nodatafoundv2"/>
+
+
+        <ListView
+            android:id="@+id/boListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />-->
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_abisdets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <!-- <ListView
+         android:id="@+id/delListView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@+id/sbmtRprtBtn"
+         android:layout_below="@+id/controlAbis"
+         android:divider="@null"
+         android:listSelector="@android:color/transparent"
+         android:scrollbars="none" />-->
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddItemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="80dp"
+        android:clickable="true"
+        app:tint="@android:color/white"
+        app:srcCompat="@drawable/addnew"
+        app:backgroundTint="@color/teal_200"/>
+
+
+    <RelativeLayout
+        android:id="@+id/sbmtRprtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/effect_submit"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:theme="@style/AppThemeFontStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Submit"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

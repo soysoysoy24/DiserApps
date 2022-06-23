@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/headerdesign"
+            android:orientation="horizontal"/>-->
+
+
+    <LinearLayout
+        android:id="@+id/viewAttndanceHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/circlelogo"
+            android:translationZ="1dp">
+
+            <ImageView
+                android:id="@+id/prceSrvyImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/view_attendance" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="-15dp"
+            android:background="@color/statsBar"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="View Attendance"
+                android:textColor="#FFF"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/filterType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/viewAttndanceHeader"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittxtdesign"
+        android:drawableLeft="@drawable/filter"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Select filter type"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/controlAttndnce"
+        android:layout_below="@+id/filterType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <include layout="@layout/layout_controlviewattendance" />
+
+    </RelativeLayout>
+
+
+  <!--  <ListView
+        android:id="@+id/attndnceListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/controlAttndnce"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />-->
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/lineInv"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/controlAttndnce"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#4FC3F7" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineInv">
+
+
+
+        <ImageView
+            android:id="@+id/imageViewNoData"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="visible"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/nodatafoundv2"/>
+
+        <ListView
+            android:id="@+id/attndnceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+
+        <!--<include layout="@layout/layout_attandncedata" />-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

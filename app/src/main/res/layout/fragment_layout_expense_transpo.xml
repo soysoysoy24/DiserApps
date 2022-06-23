@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_marginTop="-12dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/transpoCategoryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Transportation Category"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/transpoCatTxt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:drawableLeft="@drawable/transpo"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Select Category"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/docTxtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Amount"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/customerField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:drawableLeft="@drawable/money"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input Amount"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="0.9dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Destination From:"
+                    android:textColor="#534F4F"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edittxtdesign"
+                android:drawableLeft="@drawable/locs"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Input Location"
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textColorHint="#5C000000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edittxtdesign"
+                android:drawableLeft="@drawable/customer"
+                android:ems="10"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Select Customer"
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textColorHint="#5C000000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:padding="0.9dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Destination To:"
+                    android:textColor="#534F4F"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/edittxtdesign"
+                android:drawableLeft="@drawable/locs"
+                android:ems="10"
+
+                android:hint="Select Location"
+                android:paddingLeft="9dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textColorHint="#5C000000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_regular" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittxtdesign"
+                android:drawableLeft="@drawable/customer"
+                android:ems="10"
+
+                android:hint="Select Customer"
+                android:paddingLeft="9dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textColorHint="#5C000000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_regular" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/textHeaderTitleMainRprt"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/report"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Remarks"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/textHeaderMainRprt"
+        android:background="#9C9C9C"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <EditText
+            android:id="@+id/rprtEditTxt"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/edittxtdesign"
+            android:ems="10"
+            android:gravity="top"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:textColorHint="#5C000000"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="15dp"
+            android:theme="@style/AppThemeFontStyle" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sbmtRprtBtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:theme="@style/AppThemeFontStyle"
+        android:textColor="#fff"
+        android:background="@drawable/effect_submit">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Add item"
+            android:textColor="#FFF"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

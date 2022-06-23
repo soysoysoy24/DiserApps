@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/lineot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+
+
+                <!--         <RelativeLayout
+                             android:id="@+id/linerel"
+                             android:layout_width="match_parent"
+                             android:layout_height="2dp"
+                             android:background="@drawable/lineshipment"
+                             android:layout_marginTop="5dp"
+                             android:paddingLeft="20dp" />-->
+
+
+                <TextView
+                    android:id="@+id/typeRprtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Add Item" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+
+
+
+
+
+                    <TextView
+                        android:id="@+id/ExpTitleTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/typeHeader"
+                        android:drawablePadding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="Set Weight KG"
+                        android:textStyle="bold" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/typeHeader"
+                        android:background="?attr/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_height="wrap_content"
+                        android:padding="1dp">
+
+                        <EditText
+                            android:id="@+id/TypeTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittxtdesign"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:hint="Select Type"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="8dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000"
+                            android:textColorHint="#5C000000"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="15dp"
+                            android:theme="@style/AppThemeFontStyle" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/typBo"
+                        android:background="?attr/colorPrimaryDark"
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+
+                        android:layout_below="@+id/ExpTitleTxt"
+                        android:layout_height="wrap_content"
+                        android:padding="1dp">
+
+                        <EditText
+                            android:id="@+id/kgTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/edittxtdesign"
+                            android:ems="10"
+                            android:hint="Add kilogram"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="8dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="#000"
+                            android:textColorHint="#5C000000"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="15dp"
+                            android:theme="@style/AppThemeFontStyle" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:layout_below="@+id/typBo"
+                        android:id="@+id/qtyHeader"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/minusBtn"
+                            android:layout_width="52dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="5dp"
+                           android:gravity="center_vertical|center_horizontal"
+                            android:padding="10dp"
+                            android:text="-"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#818181"
+                            android:theme="@style/AppThemeFontStyle" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/QtyTextHeader"
+                            android:background="#000"
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/QtyTxt"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:ems="10"
+                                android:maxLength="4"
+                                android:inputType="number"
+                                android:textAlignment="center"
+                                android:textColor="#000"
+                                android:selectAllOnFocus="true"
+                                android:textCursorDrawable="@drawable/color_cursor"
+                                android:textSize="15dp"
+                                android:text="0"
+                                android:gravity="center"
+                                android:textColorHint="#5C000000"
+                                android:theme="@style/AppThemeFontStyle"
+                                android:paddingLeft="8dp"
+                                android:textAppearance="?android:attr/textAppearanceLarge"
+                                android:background="@drawable/edittxtdesign" />
+
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/plusBtn"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="15dp"
+                           android:padding="10dp"
+                            android:text="+"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#818181"
+                            android:theme="@style/AppThemeFontStyle" />
+
+
+
+                    </LinearLayout>
+
+                    <!--
+                                        <RelativeLayout
+                                            android:layout_below="@+id/qtyHeader"
+                                            android:id="@+id/groupRadUom"
+                                            android:layout_marginTop="5dp"
+                                            android:layout_marginBottom="5dp"
+                                            android:layout_centerInParent="true"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content">
+
+                                            <RadioGroup
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="horizontal">
+
+
+                                                <RadioButton
+                                                    android:id="@+id/forPcs"
+                                                    android:text="PCS"
+                                                    android:padding="5dp"
+                                                    android:theme="@style/AppThemeFontStyle"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"/>
+
+                                                <RadioButton
+                                                    android:id="@+id/forPcks"
+                                                    android:text="PACK/s"
+                                                    android:padding="5dp"
+                                                    android:theme="@style/AppThemeFontStyle"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"/>
+
+                                                <RadioButton
+                                                    android:id="@+id/forbx"
+                                                    android:text="BOX"
+                                                    android:padding="5dp"
+                                                    android:theme="@style/AppThemeFontStyle"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"/>
+
+
+
+
+
+                                            </RadioGroup>
+
+
+                                        </RelativeLayout>-->
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_below="@+id/qtyHeader"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/AddItemBtn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                           android:padding="10dp"
+                            android:text="Add item"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:theme="@style/AppThemeFontStyle" />
+
+                        <Button
+                            android:id="@+id/addMoreBtn"
+                            android:layout_width="100dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="15dp"
+                            android:padding="10dp"
+                            android:text="Add more item"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="#fff"
+                            android:theme="@style/AppThemeFontStyle" />
+
+
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/CloseBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/qtyHeader"
+                        android:layout_alignStart="@+id/qtyHeader"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="58dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="50dp"
+                        android:visibility="visible"
+                       android:padding="10dp"
+                        android:text="Close"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#fff"
+                        android:theme="@style/AppThemeFontStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

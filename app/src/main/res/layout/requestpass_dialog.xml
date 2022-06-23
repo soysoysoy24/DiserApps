@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+
+        android:elevation="20dp">
+
+        <!--        android:layout_below="@+id/image"-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/lineot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:padding="0.9dp">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="RESET PASSWORD"
+                        android:textColor="#534F4F"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/bioId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittxtdesign"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Input bio id"
+                    android:textAlignment="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textColorHint="#5C000000"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:padding="0.9dp">
+
+                    <TextView
+                        android:id="@+id/cheeseTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Password"
+                        android:textColor="#534F4F"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintAnimationEnabled="true"
+                app:passwordToggleContentDescription="Show password"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/hintpass">
+
+
+
+              <EditText
+                    android:id="@+id/passTxtField"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittxtdesign"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Input password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textColorHint="#5C000000"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+             <!--   <EditText
+                    android:id="@+id/passTxtField"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittxtdesign"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Input password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textColorHint="#5C000000"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15dp" />-->
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:orientation="vertical"
+                    android:padding="0.9dp">
+
+                    <TextView
+                        android:id="@+id/lavaTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Confirm password"
+                        android:textColor="#534F4F"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+         <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintAnimationEnabled="true"
+            app:passwordToggleContentDescription="Show password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/hintpass">
+
+
+
+          <EditText
+                    android:id="@+id/CnfrmPassTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittxtdesign"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Input confirm password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textColorHint="#5C000000"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--    <EditText
+                    android:id="@+id/CnfrmPassTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittxtdesign"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_regular"
+                    android:hint="Input confirm password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="8dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000"
+                    android:textColorHint="#5C000000"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="15dp" />-->
+
+
+                <RelativeLayout
+                    android:id="@+id/sbmtBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/effect_accept_btn"
+                    android:clickable="true">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Confirm"
+                        android:textColor="#FFF"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

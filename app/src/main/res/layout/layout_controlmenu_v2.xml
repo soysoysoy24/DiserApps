@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-12dp">
+
+    <TableLayout
+        android:id="@+id/ButtonsTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/invBtn"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true"
+                android:layout_marginTop="-10dp">
+
+
+                <ImageView
+                    android:id="@+id/invLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/inv" />
+
+                <TextView
+                    android:id="@+id/invTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/invLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Inventory"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/delBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/delLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/dlvry" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/delLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Delivery"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/absBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/abisLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/abis" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/abisLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="ABIS"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/prceSrveyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:id="@+id/prceSrveyLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/price_survey" />
+
+                <TextView
+                    android:id="@+id/prceSrveyTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/prceSrveyLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Price \nSurvey"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/popMatsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:id="@+id/popMatsLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/pop_material" />
+
+                <TextView
+                    android:id="@+id/popMatsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/popMatsLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Pop \nMaterial"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/incdntRprt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:id="@+id/incdntRprtLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/incident_report" />
+
+                <TextView
+                    android:id="@+id/incdntRprtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/incdntRprtLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Incident \nReport"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_gravity="center">
+
+
+            <RelativeLayout
+                android:id="@+id/statsRprtBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:id="@+id/statsRprtLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/status_report" />
+
+                <TextView
+                    android:id="@+id/statsRprtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/statsRprtLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Status \nReport"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/expnseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/expnseLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/xpense" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/expnseLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="Expense \n "
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/viewAttndnceBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true">
+
+
+                <ImageView
+                    android:id="@+id/viewAttndnceLogo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/view_attendance" />
+
+                <TextView
+                    android:id="@+id/viewAttndnceTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewAttndnceLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="View \nAttendance"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="-5dp"
+            android:layout_gravity="center">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true">
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/viewLogsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/effect_menu_button"
+                android:clickable="true"
+                android:visibility="visible">
+
+
+                <ImageView
+                    android:id="@+id/viewLogsLogo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/view_logs" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/viewLogsLogo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="center"
+                    android:text="View Logs"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#176726"
+                    android:textSize="10dp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:visibility="visible">
+
+            </RelativeLayout>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footerdesign_v2"
+        android:orientation="horizontal">
+
+
+    </RelativeLayout>-->
+
+</RelativeLayout>

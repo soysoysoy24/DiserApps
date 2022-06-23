@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="hintpass">#B4B4B4</color>
+    <color name="statsBar">#FFB74D</color>
+    <color name="submtBtnColor">#F97800</color>
+    <color name="accept">#35B120</color>
+    <color name="bootstrap_well_border_color">#E7E7E7</color>
+    <color name="addmoreColor">#0093d7</color>
+    <color name="navBar">#AAFBAD</color>
+    <color name="gray">#BFBFBF</color>
+    <color name="textcolormenuexpense">#686868</color>
+    <color name="menuexpense">#4EB30B</color>
+    <color name="cancel">#C62828</color>
+    <color name="transparent">#00FFFFFF</color>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ACCOUNT VALIDATION"
+        android:textStyle="bold"
+        android:textColor="@color/submtBtnColor"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:fontFamily="@font/poppins_regular"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:background="@drawable/headerdesignlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+
+            <EditText
+                android:id="@+id/bioIdField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:ems="10"
+                android:textAlignment="center"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="BIO ID"
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:backgroundTint="@color/statsBar"
+                android:textColorHint="#5C000000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <EditText
+                android:id="@+id/passField"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textAlignment="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:hint="Set password"
+
+                android:paddingLeft="8dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#000"
+                android:textColorHint="#5C000000"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:textSize="15dp"
+                android:backgroundTint="@color/statsBar"
+                android:fontFamily="@font/poppins_regular" />
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/chckPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set password same as your BIO ID"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="10dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/validateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+
+            android:background="@drawable/effect_check_in_out"
+            android:clickable="true"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Validate"
+                    android:textColor="#FFF"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

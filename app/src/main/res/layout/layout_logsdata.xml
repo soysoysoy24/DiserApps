@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:elevation="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@drawable/datadesignlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITY TYPE: "
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/actTypeTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inventory"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER: "
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/custTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TST001 - TEST CUSTOMER"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE: "
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/actDteTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02/05/2022"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/viewDetsBtn"
+                android:clickable="true"
+                android:background="@drawable/effect_click"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIME: "
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />-->
+
+                <TextView
+                    android:id="@+id/viewDetsTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/view_dets"
+                    android:clickable="true"
+                    android:textStyle="bold"
+                    android:textColor="#4FC3F7"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/datadesignlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITY TYPE: "
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/invNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER: "
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/invNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TST001 - TEST CUSTOMER"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE: "
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/StatsDteTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02/05/2022"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIME: "
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/StatsTmeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02:00 PM"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>-->
+
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/datadesignlayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ACTIVITY TYPE: "
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/invNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABIS"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER: "
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+            <TextView
+                android:id="@+id/invNumTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TST001 - TEST CUSTOMER"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DATE: "
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/StatsDteTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02/05/2022"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TIME: "
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+                <TextView
+                    android:id="@+id/StatsTmeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02:00 PM"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_regular"
+                    />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>-->
+
+
+
+</LinearLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-11dp"
+        android:layout_marginBottom="99dp"
+        android:text="Discrepancy Note"
+        android:textColor="#000"
+        android:theme="@style/AppThemeFontStyle" />
+-->
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_centerInParent="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:elevation="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/lineot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+
+
+
+
+                <!--         <RelativeLayout
+                             android:id="@+id/linerel"
+                             android:layout_width="match_parent"
+                             android:layout_height="2dp"
+                             android:background="@drawable/lineshipment"
+                             android:layout_marginTop="5dp"
+                             android:paddingLeft="20dp" />-->
+
+
+                <TextView
+                    android:id="@+id/typeRprtTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Select Report Type" />
+
+
+                <RelativeLayout
+                    android:id="@+id/textHeader"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:padding="1dp">
+
+
+                    <EditText
+                        android:id="@+id/searchTxtField"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittxtdesign"
+                        android:drawableLeft="@drawable/magnifyer"
+                        android:ems="10"
+                        android:hint="Search"
+                        android:paddingLeft="8dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#000"
+                        android:textColorHint="#5C000000"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textSize="15dp"
+                        android:theme="@style/AppThemeFontStyle" />
+
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/reportTypView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:divider="@drawable/lineshipment"
+                    android:dividerHeight="1px"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

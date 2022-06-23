@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerLogin"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/headerdesign"
+        android:orientation="horizontal">
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/headerLogin"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/diser_app_logo2" />
+
+
+    <RelativeLayout
+        android:id="@+id/headeraccnt"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+       android:layout_below="@id/loginLogo"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_logincontrol" />
+
+    </RelativeLayout>
+
+  <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/footerdesign_v2">
+
+
+    </RelativeLayout>-->
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="SHARE OF SHELVES"
+            android:textColor="#534F4F"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/cheeseTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="◉ CHEESE CAKE"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/cheeseCakeField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input cheese cake facing"
+        android:paddingLeft="8dp"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/lavaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="◉ LAVA CAKE"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/lavaTxtField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input lava cake facing"
+        android:paddingLeft="8dp"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/inipitTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="◉ INIPIT"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/inipitTxtField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input inipit facing"
+        android:paddingLeft="8dp"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/whattaTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="◉ WHATTATOPS"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/whattaTxtField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input whattatops cake facing"
+        android:paddingLeft="8dp"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/totLemonTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="◉ TOTAL LEMONSQUARE"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/lemonsquareTxtField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input total lemonsquare facing"
+        android:paddingLeft="8dp"
+        android:inputType="number"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+
+        android:layout_height="wrap_content"
+        android:padding="0.9dp">
+
+        <TextView
+            android:id="@+id/totCatTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:text="◉ TOTAL CATEGORY"
+            android:textColor="#534F4F"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/catogeryTxtField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edittxtdesign"
+        android:ems="10"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:hint="Input category"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:textColorHint="#5C000000"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:textSize="15dp"
+        android:fontFamily="@font/poppins_regular" />
+
+
+
+
+</LinearLayout>

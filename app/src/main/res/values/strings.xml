@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DiserApps</string>
+    <string name="view_rep"> <u>(View reports)</u></string>
+    <string name="view_pop"> <u>(View item)</u></string>
+    <string name="view_dets"> <u>(View details)</u></string>
+    <string name="skip"> <u>SKIP</u></string>
+
+    <string name="nxt"> <u>NEXT ></u></string>
+    <string name="prev"> <u> &lt; PREVIOUS </u></string>
+
+    <string name="access_map_token">pk.eyJ1Ijoic295MjQiLCJhIjoiY2s0YWxxMzRqMDUxcjNobW14M3I4M255ayJ9.QfUteE5USfsE1RnzrKZroA</string>
+</resources>
