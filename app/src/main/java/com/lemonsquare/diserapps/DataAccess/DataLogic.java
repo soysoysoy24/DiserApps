@@ -14,6 +14,7 @@ import com.lemonsquare.diserapps.Models.CustomerModel;
 import com.lemonsquare.diserapps.Models.DeliveryModel;
 import com.lemonsquare.diserapps.Models.DiserModel;
 import com.lemonsquare.diserapps.Models.DisplayModel;
+import com.lemonsquare.diserapps.Models.ExpenseModel;
 import com.lemonsquare.diserapps.Models.FilingModel;
 import com.lemonsquare.diserapps.Models.IncidentReportModel;
 import com.lemonsquare.diserapps.Models.MaterialModel;
@@ -288,6 +289,71 @@ public class DataLogic {
         return  true;
     }
 
+    public boolean synchXpenseCat (ExpenseModel expnsStats)
+    {
+        database = openHelper.getWritableDatabase();
+        database.isOpen();
+
+        int cntInt = 0;
+
+
+        String query_cnt = "SELECT COUNT(*) FROM TBL_XPNS_CLSS\n" +
+                "WHERE XPNSDESC = '" + expnsStats.getXpnseDesc() + "'";
+        Cursor cursor = database.rawQuery(query_cnt,null);
+        if (cursor.moveToFirst())
+        {
+            do {
+                cntInt =  cursor.getInt(0);
+            }while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        if (cntInt == 0)
+        {
+            String query = "Insert into TBL_XPNS_CLSS (XPNSDESC) Values (?)";
+            SQLiteStatement insertStmt = database.compileStatement(query);
+            insertStmt.clearBindings();
+            insertStmt.bindString(1,expnsStats.getXpnseDesc());
+            insertStmt.executeInsert();
+        }
+        return  true;
+    }
+
+
+    public boolean synchXpenseTranspoCat (ExpenseModel expnsTransStats)
+    {
+
+
+        database = openHelper.getWritableDatabase();
+        database.isOpen();
+
+        int cntInt = 0;
+
+
+        String query_cnt = "SELECT COUNT(*) FROM TBL_TRNSP_XPNS_CLSS\n" +
+                "WHERE TRNSPOXPNSDESC = '" + expnsTransStats.getXpnseTranDesc() + "'";
+        Cursor cursor = database.rawQuery(query_cnt,null);
+        if (cursor.moveToFirst())
+        {
+            do {
+                cntInt =  cursor.getInt(0);
+            }while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        if (cntInt == 0)
+        {
+            String query = "Insert into TBL_TRNSP_XPNS_CLSS (TRNSPOXPNSDESC) Values (?)";
+            SQLiteStatement insertStmt = database.compileStatement(query);
+            insertStmt.clearBindings();
+            insertStmt.bindString(1,expnsTransStats.getXpnseTranDesc());
+            insertStmt.executeInsert();
+        }
+        return  true;
+    }
+
+
+
 
 
     public boolean DeleteMaintainTable()
@@ -323,6 +389,21 @@ public class DataLogic {
 
         String queryAutoIncDelDisp = "DELETE FROM sqlite_sequence WHERE name = 'TBL_DSPLY_CLSS'";
         database.execSQL(queryAutoIncDelDisp);
+
+         
+        String querydelcatxpnse_ = "DELETE FROM TBL_XPNS_CLSS";
+        database.execSQL(querydelcatxpnse_);
+
+        String queryAutoIncDelXpnse = "DELETE FROM sqlite_sequence WHERE name = 'TBL_XPNS_CLSS'";
+        database.execSQL(queryAutoIncDelXpnse);
+
+
+
+        String querydelcattranspoxpnse_ = "DELETE FROM TBL_TRNSP_XPNS_CLSS";
+        database.execSQL(querydelcattranspoxpnse_);
+
+        String queryAutoIncDelTranspoXpnse = "DELETE FROM sqlite_sequence WHERE name = 'TBL_TRNSP_XPNS_CLSS'";
+        database.execSQL(queryAutoIncDelTranspoXpnse);
 
 
         String querydelcust_ = "DELETE FROM TBL_CUSTOMERS";
@@ -2052,6 +2133,20 @@ public class DataLogic {
                 "(\n" +
                 "\tID INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
                 "\tFILINGCATDESC TEXT NOT NULL DEFAULT ''\n" +
+                ")");
+
+
+        database.execSQL("CREATE TABLE IF NOT EXISTS TBL_XPNS_CLSS\n" +
+                "(\n" +
+                "\tID INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
+                "\tXPNSDESC TEXT NOT NULL DEFAULT ''\n" +
+                ")");
+
+
+        database.execSQL("CREATE TABLE IF NOT EXISTS TBL_TRNSP_XPNS_CLSS\n" +
+                "(\n" +
+                "\tID INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
+                "\tTRNSPOXPNSDESC TEXT NOT NULL DEFAULT ''\n" +
                 ")");
 
         database.execSQL("CREATE TABLE IF NOT EXISTS TBL_DSPLY_CLSS\n" +
