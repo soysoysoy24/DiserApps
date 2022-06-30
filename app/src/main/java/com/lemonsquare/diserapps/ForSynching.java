@@ -118,6 +118,7 @@ public class ForSynching {
         jsonObject.add("param",array);
 
         System.out.println("Test");
+        System.out.println("Test");
 
         Call<ResultModel> userCall = jsonPlaceHolderApi.createPosts(jsonObject);
         userCall.enqueue(new Callback<ResultModel>() {
