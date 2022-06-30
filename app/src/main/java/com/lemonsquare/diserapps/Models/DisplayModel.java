@@ -2,7 +2,7 @@ package com.lemonsquare.diserapps.Models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class DisplayModel {
+public class DisplayModel extends ExpenseModel {
 
     @JsonProperty("DISP_DESC")
     private String dispcat;

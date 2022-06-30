@@ -81,7 +81,7 @@ public class SplashscreenActivity extends AppCompatActivity {
         prefs = getSharedPreferences(BuildConfig.VERSION_NAME, MODE_PRIVATE);
         firstStart = prefs.getBoolean("firstStart", true);
 //      dataLogic.showFilingCatbl();
-        List<CustomerModel> getRaw = dataLogic.showRaw();
+  //      List<CustomerModel> getRaw = dataLogic.showRaw();
 
         if (firstStart)
         {

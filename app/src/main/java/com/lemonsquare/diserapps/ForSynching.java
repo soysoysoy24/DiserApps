@@ -22,6 +22,7 @@ import com.lemonsquare.diserapps.JsonInterface.JsonAPI;
 import com.lemonsquare.diserapps.LogIn.LogInActivity;
 import com.lemonsquare.diserapps.Models.CustomerModel;
 import com.lemonsquare.diserapps.Models.DiserModel;
+import com.lemonsquare.diserapps.Models.ExpenseModel;
 import com.lemonsquare.diserapps.Models.MaterialModel;
 import com.lemonsquare.diserapps.Models.ResultModel;
 import com.lemonsquare.diserapps.Models.StatusReportModel;
@@ -324,12 +325,15 @@ public class ForSynching {
                         String resultJSON = response.body().getReslt();
                         JSONArray jo = new JSONArray(resultJSON);
                         StatusReportModel stats = new StatusReportModel();
+                        ExpenseModel statsExpnse = new ExpenseModel();
                         for (int res = 0; res<=jo.length()-1;res++)
                         {
                             JSONObject JsnRes = new JSONObject(String.valueOf(jo.getJSONObject(res)));
                             String ress = String.valueOf(JsnRes);
                             ObjectMapper objectMapper = new ObjectMapper();
                             stats  = objectMapper.readValue(ress,StatusReportModel.class);
+                            statsExpnse = objectMapper.readValue(ress, ExpenseModel.class);
+
 
                             stats.setStatscat(stats.getStatscat());
                             databaseAccess.synchStatCat(stats);
@@ -346,6 +350,14 @@ public class ForSynching {
 
                             stats.setDispcat(stats.getDispcat());
                             databaseAccess.synchDispCat(stats);
+
+
+                            statsExpnse.setXpnseDesc(statsExpnse.getXpnseDesc());
+                            databaseAccess.synchXpenseCat(statsExpnse);
+
+
+                            statsExpnse.setXpnseTranDesc(statsExpnse.getXpnseTranDesc());
+                            databaseAccess.synchXpenseTranspoCat(statsExpnse);
 
                         }
 

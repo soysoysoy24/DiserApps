@@ -398,7 +398,6 @@ public class DataLogic {
         database.execSQL(queryAutoIncDelXpnse);
 
 
-
         String querydelcattranspoxpnse_ = "DELETE FROM TBL_TRNSP_XPNS_CLSS";
         database.execSQL(querydelcattranspoxpnse_);
 
@@ -773,6 +772,29 @@ public class DataLogic {
         }
 
         return dispID;
+    }
+
+
+    public int getExpenseCatID (ExpenseModel stats)
+    {
+
+        database = openHelper.getWritableDatabase();
+        database.isOpen();
+
+        int xpnseID = 0;
+
+        String query = "SELECT ID FROM TBL_XPNS_CLSS WHERE XPNSDESC = '"  + stats.getXpnseDesc() + "'";
+        Cursor cursor = database.rawQuery(query,null);
+
+        if(cursor.moveToFirst())
+        {
+            do{
+                xpnseID = cursor.getInt(0);
+            }while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return xpnseID;
     }
 
 
@@ -2055,6 +2077,31 @@ public class DataLogic {
         }
 
         return getDisplayCat;
+    }
+
+
+    public List<ExpenseModel> showExpnseCat()
+    {
+        database = openHelper.getWritableDatabase();
+        database.isOpen();
+
+        List<ExpenseModel> getExpnseCat = new ArrayList<ExpenseModel>();
+
+        String query = "SELECT * FROM TBL_XPNS_CLSS";
+        Cursor cursor = database.rawQuery(query,null);
+
+        if(cursor.moveToFirst())
+        {
+            do{
+                ExpenseModel cats = new ExpenseModel();
+                cats.setId(cursor.getInt(0));
+                cats.setXpnseDesc(cursor.getString(1));
+                getExpnseCat.add(cats);
+            }while (cursor.moveToNext());
+            cursor.close();
+        }
+
+        return getExpnseCat;
     }
 
 

@@ -227,6 +227,8 @@ public class ValidationActivity extends AppCompatActivity {
         jsonObject.addProperty("sp_name","SP_REST_FOR_VALIDATION");
         jsonObject.add("param",array);
 
+        System.out.println(jsonObject);
+
 
         Call<ResultModel> userCall = jsonPlaceHolderApi.createPosts(jsonObject);
         userCall.enqueue(new Callback<ResultModel>() {

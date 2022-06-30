@@ -41,6 +41,7 @@ import com.lemonsquare.diserapps.JsonInterface.JsonAPI;
 import com.lemonsquare.diserapps.MainActivity;
 import com.lemonsquare.diserapps.Models.CustomerModel;
 import com.lemonsquare.diserapps.Models.DiserModel;
+import com.lemonsquare.diserapps.Models.ExpenseModel;
 import com.lemonsquare.diserapps.Models.FilingModel;
 import com.lemonsquare.diserapps.Models.IncidentReportModel;
 import com.lemonsquare.diserapps.Models.MaterialModel;
@@ -484,6 +485,8 @@ public class LogInActivity  extends AppCompatActivity {
         jsonObject.add("param",array);
 
 
+        System.out.println(jsonObject);
+
         Call<ResultModel> userCall = jsonPlaceHolderApi.createPosts(jsonObject);
         userCall.enqueue(new Callback<ResultModel>() {
             @Override
@@ -725,6 +728,7 @@ public class LogInActivity  extends AppCompatActivity {
                             JSONObject JsnRes = new JSONObject(String.valueOf(jo.getJSONObject(res)));
                             String ress = String.valueOf(JsnRes);
                             ObjectMapper objectMapper = new ObjectMapper();
+                            ObjectMapper objectMapperExp = new ObjectMapper();
                             stats  = objectMapper.readValue(ress,StatusReportModel.class);
 
                             stats.setStatscat(stats.getStatscat());
@@ -741,6 +745,14 @@ public class LogInActivity  extends AppCompatActivity {
 
                             stats.setDispcat(stats.getDispcat());
                             dataLogic.synchDispCat(stats);
+
+
+                            stats.setXpnseDesc(stats.getXpnseDesc());
+                            dataLogic.synchXpenseCat(stats);
+
+
+                            stats.setXpnseTranDesc(stats.getXpnseTranDesc());
+                            dataLogic.synchXpenseTranspoCat(stats);
 
                         }
 

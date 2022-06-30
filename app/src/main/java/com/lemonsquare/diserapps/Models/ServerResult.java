@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class ServerResult {
 
-    @JsonProperty(" ")
+    @JsonProperty("Res")
     private String res;
 
     public String getRes() {
