@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.widget.Toast;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -117,6 +118,7 @@ public class ForSynching {
         jsonObject.addProperty("sp_name","SP_REST_FTCH_CUST_DSER");
         jsonObject.add("param",array);
 
+        Toast.makeText(context, "sample", Toast.LENGTH_SHORT).show();
 
         Call<ResultModel> userCall = jsonPlaceHolderApi.createPosts(jsonObject);
         userCall.enqueue(new Callback<ResultModel>() {
