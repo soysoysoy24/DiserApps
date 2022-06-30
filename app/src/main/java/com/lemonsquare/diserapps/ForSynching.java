@@ -117,7 +117,7 @@ public class ForSynching {
         jsonObject.addProperty("sp_name","SP_REST_FTCH_CUST_DSER");
         jsonObject.add("param",array);
 
-
+        System.out.println("Test");
 
         Call<ResultModel> userCall = jsonPlaceHolderApi.createPosts(jsonObject);
         userCall.enqueue(new Callback<ResultModel>() {
